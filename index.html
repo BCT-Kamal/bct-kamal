@@ -1,0 +1,1262 @@
+<body id="body"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div>
+            <div id="wrapper" class="App">
+                <div class="Toastify"></div>
+                <div>
+                    <div class="navbar-custom">
+                        <div class="container-fluid">
+                            <ul class="list-unstyled topnav-menu float-right mb-0">
+                                <li class="dropdown adv-search" style="margin-top: 21px;">
+                                    <div class="pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-sm"><br>
+                                                    <p class="error-msg"></p>
+                                                    <div class="input-group-append">
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <div class="search-box2"><button
+                                                                    class="btn btn-primary btn-sm btn-search"
+                                                                    type="submit"><i
+                                                                        class="fe-search"></i></button><input
+                                                                    type="text" class="form-control w-250 input-search"
+                                                                    placeholder="Contact No." maxlength="15" value="">
+                                                            </div><button type="button"
+                                                                class="btn btn-primary btn-sm adv-src"
+                                                                data-toggle="tooltip" data-placement="bottom"
+                                                                title="Advanced Search"><i
+                                                                    class="fe-pocket"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="dropdown d-lg-inline-block topbar-dropdown false" id="switchUser"><span
+                                        class="nav-link dropdown-toggle arrow-none waves-effect waves-light"><img
+                                            class="gray-icon" src="/staging/static/media/switchuser2.1de968bb.svg"
+                                            alt="switch" height="35px" width="35px"><img class="orange-icon"
+                                            src="/staging/static/media/switchuser2.1de968bb.svg" alt="switch"
+                                            height="35px" width="35px"></span>
+                                    <div class="dropdown-menu dropdown-lg dropdown-menu-right false"
+                                        style="width: 300px;"></div>
+                                </li>
+                                <li class="dropdown d-lg-inline-block topbar-dropdown" id="switchLang"><span
+                                        class="nav-link dropdown-toggle arrow-none waves-effect waves-light"
+                                        data-toggle="dropdown" role="button" aria-haspopup="false"
+                                        aria-expanded="false">EN - Eng<i class="mdi mdi-chevron-down"></i></span></li>
+                                <li class="dropdown notification-list topbar-dropdown  false" id="switchNotification"
+                                    style="max-height: 130px;"><span
+                                        class="nav-link dropdown-toggle waves-effect waves-light"><i
+                                            class="fe-bell noti-icon"></i></span>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-lg false">
+                                        <div class="dropdown-item noti-title">
+                                            <h5 class="m-0"><span class="float-right"><small
+                                                        class="cursor-pointer">Clear All</small></span>Notification</h5>
+                                        </div>
+                                        <div class="noti-scroll overflow-auto" data-simplebar="init">
+                                            <div class="simplebar-wrapper" style="margin: 0px;">
+                                                <div class="simplebar-height-auto-observer-wrapper">
+                                                    <div class="simplebar-height-auto-observer"></div>
+                                                </div>
+                                                <div class="simplebar-mask">
+                                                    <div class="simplebar-offset">
+                                                        <div class="simplebar-content-wrapper">
+                                                            <div class="simplebar- mx-1">
+                                                                <div
+                                                                    class="dropdown-item text-center text-primary notify-item notify-all">
+                                                                    View all<i class="fe-arrow-right"></i></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown notification-list topbar-dropdown  false" id="profile"
+                                    style="max-height: 130px;"><span
+                                        class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light">
+                                        <p style="line-height: 14px; text-align: left; padding-top: 12px;">
+                                            Welcome<br><strong>sibichakravarthi S</strong><i
+                                                class="mdi mdi-chevron-down"></i><br>ADMIN-TD123</p>
+                                    </span>
+                                    <div class="profile-nav dropdown-menu dropdown-menu-right dropdown false">
+                                        <div class="dropdown-header noti-title">
+                                            <h6 class="text-overflow m-0">Welcome !</h6>
+                                        </div><a class="dropdown-item notify-item" href="/staging/user/myprofile"><i
+                                                class="fe-user"></i><span>My Profile</span></a><a
+                                            class="dropdown-item notify-item" href="/"><i class="fe-lock"></i><span>Lock
+                                                Screen</span></a>
+                                        <div class="dropdown-divider"></div><span class="notify-item"><i
+                                                class="fe-log-out"></i><span>Logout</span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled topnav-menu topnav-menu-left mb-0">
+                                <li><button class="button-menu-mobile waves-effect waves-light"><i
+                                            class="fe-menu"></i></button></li>
+                                <li><a class="navbar-toggle nav-link" data-toggle="collapse"
+                                        data-target="#topnav-menu-content">
+                                        <div class="lines"><span></span><span></span><span></span></div>
+                                    </a></li>
+                            </ul>
+                            <div class="logo-box"><a class="logo text-center logo-light" href="/"><span
+                                        class="logo-lg"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAABGCAIAAADq9Sl3AAAACXBIWXMAABJ0AAASdAHeZh94AAAFF2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4wLWMwMDAgNzkuMTM1N2M5ZSwgMjAyMS8wNy8xNC0wMDozOTo1NiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0wOC0xOFQxNTo0ODozNSswNTozMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMDgtMjNUMDg6NDg6MjgrMDU6MzAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMDgtMjNUMDg6NDg6MjgrMDU6MzAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6YmRkOTI5YzgtMTMzZC0y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s7PXrl17882xdNR77733Zz/7WUZGBjP379/f/pigYGxLO3XqNGTIkPgvixcvth9Gjhw5adIkAEQ0aNAgZk5PP5a0Fg6H33jjjfjXQCDQoEED+1lrPWvWLACnnHIKgLFjx27cuNEWtW7d2hKfMmUKM2dkHEt3Kiws3LZtG4D46fv4FGLmCy+8sH379ps2bfrwww+Z+f3330/ohPXr18f7MzMzMxKJAHjzzTdzcnISaloGmjRpAuDMM8+shXAsXrwYQFZWVmZmJoDdu3db4di4caMl+vTTT7/yyisA7CRg5htuuKFr16629KGHHmLmXr16XXrppWVlZQAGDx587733ApgwYcKoUaNc17W6x8rBs88+W/Hpe/futU2K//Ltt98CuPLKK8ePHw/gkUceWbFihe04y1h+fv6qVavizR43bhyAXbt2MfPll1/eunVrq8Yrz5K4jvzXv/5VsdeWLFnCzI0aNRo6dKj95cknn2Tmp59+umK1+++/Pzc3F4Dnebt37wbw7rvv2qI///nPtlpRUdGNN94YDAaZeciQIS1atIjf/tZbb73++utxgllZWcOHDz906BCAnTt32jrvvfdenNuBAwfaCZCWlsbM1pbyPK+wsNC2d9SoUWeddRYzp6Wl/fWvf7UU3n77bcuk7/uHDx8GsHLlyoceegjA+PHjr7jiCgBlZWUJPVOlQWpdk0VFRSUlJe3bt7/wwgsbN24MIC7jpaWl48aNmzhx4sUXX5ydnQ1AKRV3pTZt2hRAy5YtlVJ22evatWvbtm0nT548fPjwd955Z/To0R06dLjsssvS0tIWLFgwadIkIrIzBoCdfFaZx+eTFfMOHTq88MILN910k5Uq13WFEHaelZaW2kYC0Fo3b97cWhvhcNh13fz8fABWu1SEVWNENHLkSAB2qAAEg0FLP94oz/MAbNmyRZQfa27ZsmVpaamd4vGWXnLJJXEKeXl5RNS6deucnBxLsKyszKlwciI+Eyz69u1bVFRk7UfbhwAq1g+Hwz179szPz7fNt01WStk6vu/feuut69evJ6KysrJrrrnGCkdcFqWUtn8cx9m1a5cQol27dr17954yZYplryKqFA77upk9e/YUFhbu3Lmze/fudsBmzZpl9bnrups2bRo9evSqVasKCgoOHDhQUlLC5WuK7UfP86LRaKtWrSxb48eP7969e/PmzXNycqZMmfLEE0/k5uYWFxcfOnTIGu12UgLIzMzs16/f448/vmrVqr179/bp0+fUU08FkJ2dfc8993Tq1Klx48b2EXFWv/76azvwdkFkZtsLtsLRo0dt6eTJk/fs2XPdddfFWzpv3rznnnvO933f97OysiZOnGh/nz9//tKlSw8ePGgPJQSDwa1btwK47LLLjDFr1qxZvXr1/v37+/fvH3+Qxf79sTcEKaX+8pe/AAiFQn379rXD2bZt2927d9tBtV10zjnnAMjJydm7d29ubu6IESNsqe/7FRtoIaUMhULhcNjqyzgdWzktLe2xxx4bOXLkt99+GwqFmjVrZnvJGBM/WmGphcPhSy+91BgzZMiQCRMmJH2BTJXLyrp16+J1hg0bZk2YJ598EkC/fv3OPPPMF1980WoqAGPHjmXmX/3qV3379mXmYDD4/PPPM/Pw4cOHDx/OzLm5uQ0bNrTcl5SUPPPMMwAcx5k8ebJVgAC6d+/ueV5FHq68MnYo6Pbbb2fmefPm2TUuGAzu2bPHLnzMvG/fPivHXG7Mr1ix4sEHH+zcubOlM3r06J49ezLzjBkzLME5c+bYovnz5wOIRqP260svvWRpvvzyy5alvn37jhkzhpntMA8cOJCZx44da+nYfYedLVxuvB85csROkqlTp5aUlFiNe95553Xo0IGZt23bZme5rTNjxgxmfvTRRy3Bm266iZmtyoxPtqVLl8b75Nprr42Py+OPP75lyxZL6siRIwD27dv34osvolzxX3311ZbCrFmzPv74Y1vTzkNrDNx5552WlG1XAurd5z81ENGoUaPeeeedq6++eubMmXUZ3/o0358annrqqYcfftj+lcUlS5bUhVS95qhHlaiPrdSjSvw/BDL3nx2DwCIAAAAASUVORK5CYII="
+                                            alt="" height="50"><img src="/staging/static/media/TD123_logo.834cd94b.png"
+                                            alt="" height="80"></span></a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-menu clearfix">
+                    <div id="header">
+                        <div class="pro-sidebar collapsed" style="margin-top: 40%;">
+                            <div class="pro-sidebar-inner">
+                                <div class="pro-sidebar-layout">
+                                    <div class="pro-sidebar-content">
+                                        <nav class="pro-menu shaped square inner-submenu-arrows">
+                                            <ul>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="fe-airplay mr-1"></i></span></span><span
+                                                            class="pro-item-content">Dashboard</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 25px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Citizen Engagement Dashboard<a
+                                                                                href="/staging/customer-engagement-dashboard"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Interaction Dashboard<a
+                                                                                href="/staging/"></a></span></div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Social Media Interaction Dashboard<a
+                                                                                href="/staging/social-media-interaction-dashboard"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="far fa-user-circle mr-1"></i></span></span><span
+                                                            class="pro-item-content">Manage Citizen</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 142px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Search Citizen<a
+                                                                                href="/staging/customer-search"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="fe-grid mr-1"></i></span></span><span
+                                                            class="pro-item-content">Helpdesk 360</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 55px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item pro-sub-menu">
+                                                                    <div class="pro-inner-item" role="button"
+                                                                        tabindex="0"><span
+                                                                            class="pro-item-content">Helpdesk</span><span
+                                                                            class="pro-arrow-wrapper"><span
+                                                                                class="pro-arrow"></span></span></div>
+                                                                    <div class="react-slidedown pro-inner-list-item closed"
+                                                                        style="height: 0px;">
+                                                                        <div>
+                                                                            <ul>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Helpdesk
+                                                                                            Board<a
+                                                                                                href="/staging/helpdesk"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Search<a
+                                                                                                href="/staging/helpdesk-search"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Search Interaction<a
+                                                                                href="/staging/ticket-search"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Create Complaint<a
+                                                                                href="/staging/create-complaint"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Create Inquiry<a
+                                                                                href="/staging/create-inquiry-new-customer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item pro-sub-menu open">
+                                                                    <div class="pro-inner-item" role="button"
+                                                                        tabindex="0"><span
+                                                                            class="pro-item-content">Manage Live
+                                                                            chat</span><span
+                                                                            class="pro-arrow-wrapper"><span
+                                                                                class="pro-arrow"></span></span></div>
+                                                                    <div class="react-slidedown pro-inner-list-item"
+                                                                        style="height: auto; transition-property: none;">
+                                                                        <div>
+                                                                            <ul>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Agent
+                                                                                            Live Chat<a
+                                                                                                href="/staging/agent-chat"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Agent
+                                                                                            Chat View<a
+                                                                                                href="/staging/agentChatListView"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Chat
+                                                                                            Monitoring<a
+                                                                                                href="/staging/chat-monitoring"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Create Master Interactions<a
+                                                                                href="/staging/master-ticket"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="fas fa-cubes mr-1"></i></span></span><span
+                                                            class="pro-item-content">MIS</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 221px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Closed Interaction Report<a
+                                                                                href="/staging/closed-interaction-report"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Open Interaction Report<a
+                                                                                href="/staging/open-interaction-report"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Created Interaction Report<a
+                                                                                href="/staging/created-interaction-report"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="fe-flag mr-1"></i></span></span><span
+                                                            class="pro-item-content">Admin</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 253px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            User Management<a
+                                                                                href="/staging/admin-user-view"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Role Management<a
+                                                                                href="/staging/admin-user-view"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item pro-sub-menu">
+                                                                    <div class="pro-inner-item" role="button"
+                                                                        tabindex="0"><span
+                                                                            class="pro-item-content">Manage
+                                                                            Workflow</span><span
+                                                                            class="pro-arrow-wrapper"><span
+                                                                                class="pro-arrow"></span></span></div>
+                                                                    <div class="react-slidedown pro-inner-list-item closed"
+                                                                        style="height: 0px;">
+                                                                        <div>
+                                                                            <ul>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Workflow<a
+                                                                                                href="/staging/wf-addedit"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="pro-menu-item">
+                                                                                    <div class="pro-inner-item"
+                                                                                        tabindex="0" role="button"><span
+                                                                                            class="pro-icon-wrapper"><span
+                                                                                                class="pro-icon"><i
+                                                                                                    class="mdi mdi-checkbox-blank-circle-outline mr-1"></i></span></span><span
+                                                                                            class="pro-item-content">Map
+                                                                                            Workflow<a
+                                                                                                href="/staging/map-workflow-template"></a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Portal Settings<a
+                                                                                href="/staging/portal-settings"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pro-menu-item pro-sub-menu">
+                                                    <div class="pro-inner-item" role="button" tabindex="0"><span
+                                                            class="pro-icon-wrapper"><span class="pro-icon"><i
+                                                                    class="fe-file mr-1"></i></span></span><span
+                                                            class="pro-item-content">BI</span><span
+                                                            class="pro-arrow-wrapper"><span
+                                                                class="pro-arrow"></span></span></div>
+                                                    <div class="pro-inner-list-item popper-element"
+                                                        style="position: fixed; left: 0px; top: 0px; margin: 0px; transform: translate(70px, 0px);"
+                                                        data-popper-escaped="" data-popper-placement="right">
+                                                        <div class="popper-inner">
+                                                            <ul>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Citizen Service Dashboard<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Closed Ticket Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Created Tickets Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            FCR MIS<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            First Call Resolution<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Followup Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Master Ticket Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Open Ticket Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            TAT Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            FollowUp Count Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            FCR Agent Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            MBR OU wise Print PDF Dashboard<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Response SLA<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Chat Channel Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Chat Channel Detail Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="pro-menu-item">
+                                                                    <div class="pro-inner-item" tabindex="0"
+                                                                        role="button"><span class="pro-item-content">
+                                                                            Chat Agent Productivity Report<a
+                                                                                href="/staging/bi-viewer"></a></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay" role="button" tabindex="0" aria-label="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-hide">
+                    <div class="content-page">
+                        <div class="content">
+                            <div class="container-fluid">
+                                <div class="content-page agent-chat">
+                                    <div class="content">
+                                        <div class="main-wrapper mt-0">
+                                            <div class="content main_content chat-container">
+                                                <div class="live-chat-sec">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <h2>Live Chat</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-container clearfix">
+                                                    <div class="sidebar-group left-sidebar chat_sidebar col-md-4">
+                                                        <div id="chats" class="left-sidebar-wrap sidebar active">
+                                                            <div class="">
+                                                                <div
+                                                                    class="left-chat-title justify-content-between align-items-center">
+                                                                    <div id="main">
+                                                                        <div class="container">
+                                                                            <div class="accordion" id="faq">
+                                                                                <div class="card">
+                                                                                    <div class="card-header"
+                                                                                        id="faqhead1"><a href="#"
+                                                                                            class="btn btn-header-link"
+                                                                                            data-toggle="collapse"
+                                                                                            data-target="#faq1"
+                                                                                            aria-expanded="true"
+                                                                                            aria-controls="faq1">Chat
+                                                                                            Queue by Minutes</a>
+                                                                                        <div class="filter2"></div>
+                                                                                    </div>
+                                                                                    <div id="faq1" class="collapse show"
+                                                                                        aria-labelledby="faqhead1"
+                                                                                        data-parent="#faq">
+                                                                                        <div class="card-body">
+                                                                                            <div class="faq-chat card border mb-1"
+                                                                                                style="z-index: 21;">
+                                                                                                <div class="p-1">
+                                                                                                    <div class="media">
+                                                                                                        <div
+                                                                                                            class="media-body overflow-hidden">
+                                                                                                            <h3 class="mb-0 font-weight-bold"
+                                                                                                                style="float: left;">
+                                                                                                                10</h3>
+                                                                                                            <p
+                                                                                                                class="text-truncate font-size-14 mb-1 pl-2 pt-1">
+                                                                                                                Total
+                                                                                                                Chat
+                                                                                                                Queue
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="p-1 border-top">
+                                                                                                    <div
+                                                                                                        class="row p-0">
+                                                                                                        <div
+                                                                                                            class="col-3">
+                                                                                                            <div
+                                                                                                                class="text-center">
+                                                                                                                <p
+                                                                                                                    class="mb-2 text-truncate font-weight-bold">
+                                                                                                                    &gt;
+                                                                                                                    10
+                                                                                                                    Min
+                                                                                                                </p>
+                                                                                                                <h4
+                                                                                                                    class="text-dark font-weight-bold">
+                                                                                                                    9
+                                                                                                                </h4>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-3">
+                                                                                                            <div
+                                                                                                                class="text-center">
+                                                                                                                <p
+                                                                                                                    class="mb-2 text-truncate font-weight-bold">
+                                                                                                                    5 -
+                                                                                                                    10
+                                                                                                                    Min
+                                                                                                                </p>
+                                                                                                                <h4
+                                                                                                                    class="text-dark font-weight-bold">
+                                                                                                                    0
+                                                                                                                </h4>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-3">
+                                                                                                            <div
+                                                                                                                class="text-center">
+                                                                                                                <p
+                                                                                                                    class="mb-2 text-truncate font-weight-bold">
+                                                                                                                    2 -5
+                                                                                                                    Min
+                                                                                                                </p>
+                                                                                                                <h4
+                                                                                                                    class="text-dark font-weight-bold">
+                                                                                                                    0
+                                                                                                                </h4>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-3">
+                                                                                                            <div
+                                                                                                                class="text-center">
+                                                                                                                <p
+                                                                                                                    class="mb-2 text-truncate font-weight-bold">
+                                                                                                                    1 -2
+                                                                                                                    Min
+                                                                                                                </p>
+                                                                                                                <h4
+                                                                                                                    class="text-dark font-weight-bold">
+                                                                                                                    0
+                                                                                                                </h4>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="card">
+                                                                                    <div class="card-header"
+                                                                                        id="faqhead4"><a href="#"
+                                                                                            class="btn btn-header-link"
+                                                                                            data-toggle="collapse"
+                                                                                            data-target="#faq4"
+                                                                                            aria-expanded="true"
+                                                                                            aria-controls="faq4">New
+                                                                                            Queue</a> <span
+                                                                                            class="badge badge-light">9</span>
+                                                                                    </div>
+                                                                                    <div id="faq4" class=""
+                                                                                        aria-labelledby="faqhead4"
+                                                                                        data-parent="#faq">
+                                                                                        <div class="card-body">
+                                                                                            <ul class="user-list mt-2">
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>sibi
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11380
+                                                                                                                sibieltonio@gmail.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">306
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>sibi
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11377
+                                                                                                                sibieltonio@gmail.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">283
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>sibi
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11375
+                                                                                                                sibieltonio@gmail.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">1403
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>Sibi
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11358
+                                                                                                                sibichakravarthi.s@bahwancybertek.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">5796
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>sibi
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11356
+                                                                                                                sibieltonio@gmail.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">5827
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            T</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>Test
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11355
+                                                                                                                yy@gm.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">5823
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            M</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>Microsoft
+                                                                                                                Viva
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11331
+                                                                                                                Srini@comquest-brunei.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">7117
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            M</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>Microsoft
+                                                                                                                Viva
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11325
+                                                                                                                viva-noreply@micrsoft.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">7117
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="user-list-item user-normal">
+                                                                                                    <div
+                                                                                                        class="avatar avatar-online">
+                                                                                                        <div
+                                                                                                            class="letter-avatar">
+                                                                                                            S</div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="users-list-body">
+                                                                                                        <div>
+                                                                                                            <h5>Srini
+                                                                                                            </h5>
+                                                                                                            <p>HID:
+                                                                                                                11324
+                                                                                                                Srini@comquest-brunei.com
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="last-chat-time">
+                                                                                                            <small
+                                                                                                                class="text-dark pr-2">7117
+                                                                                                                mins</small>
+                                                                                                            <div
+                                                                                                                class="new-message-count">
+                                                                                                                <i
+                                                                                                                    class="mdi mdi-chat font-17"></i>
+                                                                                                            </div><i
+                                                                                                                class="fa fa-arrow-circle-right font-17  text-danger"></i>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right-sidebar right_sidebar_profile col-md-4"
+                                                        id="middle1">
+                                                        <div class="connect-customer">
+                                                            <div class="card-section">
+                                                                <div class="card-header2">
+                                                                    <h3>Connected Citizens</h3><span
+                                                                        class="badge badge-light">1</span>
+                                                                </div>
+                                                                <div class="card-body2">
+                                                                    <div id="prof1" class="user-prof clearfix">
+                                                                        <ul class="avatar-icons clearfix">
+                                                                            <li><img src="/staging/static/media/avatar-2.5d9ea631.jpg"
+                                                                                    alt=""><span>Sibi</span>
+                                                                                <div class="avatar avatar-online"></div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <div class="card-header2">
+                                                                    <h3>Available Agents</h3><span
+                                                                        class="badge badge-light">2</span>
+                                                                </div>
+                                                                <div class="card-body2 bg-color">
+                                                                    <div id="prof1" class="user-prof clearfix">
+                                                                        <ul class="user-list mt-2">
+                                                                            <li class="user-list-item user-normal">
+                                                                                <div class="avatar avatar-busy">
+                                                                                    <div class="letter-avatar">M</div>
+                                                                                </div>
+                                                                                <div class="users-list-body">
+                                                                                    <div>
+                                                                                        <h5>Mehboob</h5>
+                                                                                        <p>Connected 1 Citizens</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="user-list-item user-normal">
+                                                                                <div class="avatar avatar-busy">
+                                                                                    <div class="letter-avatar">S</div>
+                                                                                </div>
+                                                                                <div class="users-list-body">
+                                                                                    <div>
+                                                                                        <h5>Surjeet.g@bahwancybertek.com
+                                                                                        </h5>
+                                                                                        <p>Connected 1 Citizens</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-section col-md-4" id="middle">
+                                                        <div class="customer-details">
+                                                            <h3>Citizen Details</h3>
+                                                            <div class="row">
+                                                                <div class="col-md-12 bg-color">
+                                                                    <div class="form-group"><label for="customerNumber"
+                                                                            class="col-form-label">Full Name :</label>
+                                                                        <p>Sibi</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group"><label for="customerNumber"
+                                                                            class="col-form-label">Email :</label>
+                                                                        <p>sibichakravarthi.s@bahwancybertek.com</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group"><label for="customerNumber"
+                                                                            class="col-form-label">Language :</label>
+                                                                        <p>English</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group"><label for="customerNumber"
+                                                                            class="col-form-label">Contact Number
+                                                                            :</label>
+                                                                        <p>8778134</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group"><label for="customerNumber"
+                                                                            class="col-form-label">ID Value :</label>
+                                                                        <p>-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h3>Interaction History</h3>
+                                                            <div class="inter-section clearfix">
+                                                                <div class="total-inter clearfix">
+                                                                    <div class="total-his">
+                                                                        <p data-toggle="modal"
+                                                                            data-target="#profile-detail">42</p>
+                                                                        <span>Total</span>
+                                                                    </div>
+                                                                    <div class="total-his">
+                                                                        <p data-toggle="modal"
+                                                                            data-target="#profile-detail">35</p>
+                                                                        <span>Open</span>
+                                                                    </div>
+                                                                    <div class="total-his">
+                                                                        <p data-toggle="modal"
+                                                                            data-target="#profile-detail">7</p>
+                                                                        <span>Closed</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inter-action"><button type="button"
+                                                                        class="btn btn-sm waves-effect waves-light btn-primary mt-0 ml-1 btn-sm pt-1 float-right"
+                                                                        href="#" data-toggle="modal"
+                                                                        data-target="#createprofile"
+                                                                        style="border-bottom: 1px solid rgb(204, 204, 204);">Create
+                                                                        Interaction</button></div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="slimScrollDiv"
+                                                                style="position: relative; overflow: hidden; width: 100%; height: 300px; border: 1px solid;">
+                                                                <div class="slimscroll"
+                                                                    style="overflow: hidden; width: 100%; height: 280px;">
+                                                                    <div class="chat-header">
+                                                                        <div class="user-details">
+                                                                            <div class="d-lg-none ms-2">
+                                                                                <ul class="list-inline mt-2 me-2">
+                                                                                    <li class="list-inline-item"><a
+                                                                                            class="text-muted px-0 left_side"
+                                                                                            href="#" data-chat="open"><i
+                                                                                                class="fas fa-arrow-left"></i></a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="mt-1 pl-1 user-name">
+                                                                                <h5>Sibi</h5><small
+                                                                                    class="online">Connected</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="chat-options">
+                                                                            <ul class="list-inline">
+                                                                                <li class="list-inline-item"><a
+                                                                                        class="btn btn-outline-light no-bg"
+                                                                                        data-bs-toggle="dropdown"><i
+                                                                                            class="fas fa-ellipsis-h"></i></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chat-body">
+                                                                        <div class="messages">
+                                                                            <div class="chats chats-right">
+                                                                                <div class="chat-content">
+                                                                                    <p class="message-content">hi</p>
+                                                                                </div>
+                                                                                <div class="chat-avatar"><img
+                                                                                        src="/staging/static/media/avatar-2.5d9ea631.jpg"
+                                                                                        class="rounded-circle dreams_chat">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="chats chats-right">
+                                                                                <div class="chat-content">
+                                                                                    <div class="download-col">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <div
+                                                                                                    class="chat-avatar">
+                                                                                                    <div
+                                                                                                        class="letter-avatar">
+                                                                                                        S</div><img
+                                                                                                        src="https://comquestbrunei1.sharepoint.com/_layouts/15/download.aspx?UniqueId=0131ca3d-b396-4b78-9c37-a2cf4f17eaa7&amp;Translate=false&amp;tempauth=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvY29tcXVlc3RicnVuZWkxLnNoYXJlcG9pbnQuY29tQDU3NDU4M2IxLTBkOWEtNGMyNC1iOTdjLTBkOTc5ZDkzNWU5YyIsImlzcyI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMCIsIm5iZiI6IjE2ODI0MjQ0NTEiLCJleHAiOiIxNjgyNDI4MDUxIiwiZW5kcG9pbnR1cmwiOiJudnpZd0tiVzlndVA3eDRIeis0WHZrbkNyLzhoa0padkN6TnVYRHdqT3lnPSIsImVuZHBvaW50dXJsTGVuZ3RoIjoiMTI2IiwiaXNsb29wYmFjayI6IlRydWUiLCJjaWQiOiJZMkZoTjJGallUQXRaakE1TlMweU1EQXdMVE5rTldNdE56UTBNVFprWmpZMU5ETmsiLCJ2ZXIiOiJoYXNoZWRwcm9vZnRva2VuIiwic2l0ZWlkIjoiWldRMk5XTXdaVFV0WkdWbFl5MDBaRFJpTFRrM09USXRORFl4WmpnelkySTBNVFF3IiwiYXBwX2Rpc3BsYXluYW1lIjoiQkNBRSBBcHAiLCJuYW1laWQiOiJhODFlMWEyOC0zNjAxLTRlNzAtYjcwYi1kYjViYTIxNWI0YTRANTc0NTgzYjEtMGQ5YS00YzI0LWI5N2MtMGQ5NzlkOTM1ZTljIiwicm9sZXMiOiJzZWxlY3RlZHNpdGVzIGFsbHNpdGVzLnJlYWQgYWxsc2l0ZXMud3JpdGUgYWxsc2l0ZXMubWFuYWdlIGFsbGZpbGVzLndyaXRlIGFsbGZpbGVzLnJlYWQgYWxsc2l0ZXMuZnVsbGNvbnRyb2wiLCJ0dCI6IjEiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjpudWxsLCJpcGFkZHIiOiI2MS42LjIwMC4xODYifQ.cEhSeUVtSkhpT3BaVitERnFSMDhKNzBsK2xHMng4ZHBCd2pDSjZ5V2pXND0&amp;ApiVersion=2.0"
+                                                                                                        alt=""
+                                                                                                        style="height: 50%; width: 50%; cursor: pointer;">
+                                                                                                </div>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="chat-avatar"><img
+                                                                                        src="/staging/static/media/avatar-2.5d9ea631.jpg"
+                                                                                        class="rounded-circle dreams_chat">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chat-footer">
+                                                                <form>
+                                                                    <div class="pl-2">
+                                                                        <div class="file-upload2">
+                                                                            <div class="file-select">
+                                                                                <div class="file-select-button"
+                                                                                    id="fileName"><i
+                                                                                        class="fas fa-paperclip"></i>
+                                                                                </div><input type="file"
+                                                                                    name="chooseFile" id="chooseFile"
+                                                                                    accept=".jpeg, .jpg, .png, .pdf">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="can-msg" data-toggle="modal"
+                                                                            data-target="#cannedmessage"><span
+                                                                                class="tooltip3"
+                                                                                data-tip="Reply From canned Message."
+                                                                                tabindex="2"><i
+                                                                                    class="fas fa-tasks"></i></span>
+                                                                        </div>
+                                                                    </div><textarea cols="100" rows="1"
+                                                                        class="form-control chat_form"
+                                                                        placeholder="Type a Message....."></textarea>
+                                                                    <div class="form-buttons"><button class="btn "
+                                                                            type="button" disabled=""><i
+                                                                                class="fa fa-paper-plane"></i></button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading" style="display: none; opacity: 0.8; z-index: 99999; position: fixed; inset: 0px;">
+                <div style="width: 100%; height: 100%; position: relative;">
+                    <div style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%);">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>!function (e) { function r(r) { for (var n, a, l = r[0], i = r[1], f = r[2], p = 0, s = []; p < l.length; p++)a = l[p], Object.prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0; for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]); for (c && c(r); s.length;)s.shift()(); return u.push.apply(u, f || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var i = t[l]; 0 !== o[i] && (n = !1) } n && (u.splice(r--, 1), e = a(a.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function a(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, a), t.l = !0, t.exports } a.m = e, a.c = n, a.d = function (e, r, t) { a.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, a.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, a.t = function (e, r) { if (1 & r && (e = a(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (a.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) a.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, a.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return a.d(r, "a", r), r }, a.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, a.p = "/staging/"; var l = this["webpackJsonpbcae-web"] = this["webpackJsonpbcae-web"] || [], i = l.push.bind(l); l.push = r, l = l.slice(); for (var f = 0; f < l.length; f++)r(l[f]); var c = i; t() }([])</script>
+    <script src="/staging/static/js/2.0e86a63d.chunk.js"></script>
+    <script src="/staging/static/js/main.83ecf2cc.chunk.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&amp;render=explicit" async=""></script>
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div class="g-recaptcha-bubble-arrow"
+            style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;">
+        </div>
+        <div class="g-recaptcha-bubble-arrow"
+            style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;">
+        </div>
+        <div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=4PnKmGB9wRHh1i04o7YUICeI&amp;k=6LdzapwdAAAAAAyO0js4SHNxfL0hogzYzr47tkjE"
+                name="c-fgw4bp7uh97m" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                style="width: 100%; height: 100%;"></iframe></div>
+    </div>
+    <div class="ReactModalPortal"></div>
+</body>
